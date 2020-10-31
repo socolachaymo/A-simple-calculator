@@ -1,1 +1,1 @@
-# A-simple-calculator
+# A_simple_calculator
