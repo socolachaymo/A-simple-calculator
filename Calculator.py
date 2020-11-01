@@ -70,7 +70,6 @@ class Window(qtw.QWidget):
             self.result.setText(''.join(self.fin_nums) + ''.join(self.temp_nums))
         else:
             self.result.setText(''.join(self.temp_nums))
-        print(self.temp_nums)
     
     def operation(self, operator):
         if not self.fin_nums:
@@ -79,10 +78,7 @@ class Window(qtw.QWidget):
             else:
                 self.fin_nums += self.temp_nums
         else:
-            if not self.temp_nums:
-                self.fin_nums = self.fin_nums[:-1]
-            else:
-                self.fin_nums += self.temp_nums
+            self.fin_nums += self.temp_nums
         self.fin_nums.append(operator) 
         self.temp_nums = []
         self.result.setText(''.join(self.fin_nums))
@@ -95,7 +91,7 @@ class Window(qtw.QWidget):
             self.temp_nums = []
             self.fin_nums = []
         except:
-            self.result.setText(string)
+            self.result.setText(string + '= Error')
     
     def clear(self):
         if self.temp_nums:
