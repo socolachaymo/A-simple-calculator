@@ -1,5 +1,4 @@
 # Calculator
-[![Run on Repl.it](https://repl.it/badge/github/socolachaymo/Calculator)](https://repl.it/github/socolachaymo/Calculator)
 ### About the app
 A simple calculator with four operatorations inclunding addition, subtraction, multiplication and division. In addition, it also works with decimals and brackets. Furthermore, we can clear all characters on the screen or just clear one character, and it can handle errors when there are mistakes in the operations.
 
